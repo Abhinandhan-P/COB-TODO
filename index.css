@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+h1{
+    color: rgb(192, 34, 254) ;
+    filter: drop-shadow(2px 2px 4px rgb(206, 24, 206));
+}
+body{
+    background-size: cover;
+    background-image: url(./images/wp10289525.webp);
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}  
+.container{
+    background: #fff;
+    padding:25px;
+    border-radius: 30px;
+    min-height: 75vh;
+    min-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+    padding-left:15px;
+    justify-content: center;
+}
+.todo{
+    padding:5px;
+}
+.input-group {
+    font-size: 1.25rem;
+    position: relative;
+    --primary: rgb(43, 174, 214);
+}
+.input {
+    all: unset;
+    color: #fefefe;
+    padding: 1rem;
+    border: 1px solid #9e9e9e;
+    border-radius: 10px;
+    transition: 150ms
+      cubic-bezier(0.4, 0, 0.2, 1);
+}
+.label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding-left: 50px;
+    color: #d4d4d4;
+    pointer-events: none;
+    transition: 150ms
+      cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input:focus {
+    border: 1px solid
+    var(--primary);
+}
+.input:is(:focus, :valid) ~ label {
+    transform: 
+      translateY(-120%)
+      scale(0.6);
+    padding-inline: 0.6rem;
+    color: var(--primary);
+    background: rgb(10, 10, 10);
+    border-radius: 30px;
+    border: 1px solid;
+}
+.input-group button{
+    color: #ffffffb9;
+    min-width:15%;
+    border-radius: 55px;
+    height:60px;
+    border-color: #47f9f3a1;
+    font-weight: bolder;
+    backdrop-filter: blur(8px);
+    background: rgba(15, 10, 10, 0.801);
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+}
+  
+li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 6px;
+}
+  
+.completed{
+    text-decoration: line-through;
+    font-style: italic;
+    font-weight: bold;
+    color: #8a8888e6;
+}
+.complete-button, 
+.edit-button,
+.delete-button {
+    color: #ffffffb9;
+    font-size: x-large;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.562);
+    padding: 4px 8px;
+    margin-left: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-style: normal ;
+    font-weight: bold;
+    
+}
+button:hover {
+    box-shadow: 1px 2px 12px 1px rgb(43, 174, 214);
+}
+.container{
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.055);
+    border: 0.2px solid;
+    box-shadow: 1px 2px 12px 1px rgb(43, 174, 214);
+}
